@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+.app-shell { height: 100%; }
+
+.sidebar { background: #1f2d3d; }
+.sidebar .logo { color: #fff; font-size: 20px; font-weight: 700; padding: 20px 16px 16px; letter-spacing: 1px; }
+.sidebar .el-menu { border-right: none; background: transparent; }
+
+.topbar { display: flex; align-items: center; justify-content: space-between; background: #fff; border-bottom: 1px solid #e6e8eb; height: 60px; }
+.topbar .title { font-weight: 600; font-size: 16px; color: #303133; }
+.class-picker { display: flex; align-items: center; gap: 8px; color: #606266; }
+
+.main { background: #f5f7fa; }
+
+.toolbar { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.toolbar .count { color: #909399; margin-left: auto; }
+.card { background: #fff; border-radius: 8px; padding: 18px; margin-bottom: 16px; }
+.empty-wrap { background: #fff; border-radius: 8px; padding: 60px 0; }
+
+/* 抽奖 */
+.rolling-name { font-size: 72px; font-weight: 800; color: #f56c6c; text-align: center; padding: 80px 0; letter-spacing: 8px; }
+.stage-hint { text-align: center; color: #c0c4cc; padding: 100px 0; font-size: 15px; }
+.winners-title { text-align: center; font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+.winners { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; padding: 12px 0 24px; }
+.winner-chip { background: linear-gradient(135deg, #f56c6c, #e6a23c); color: #fff; font-size: 20px; font-weight: 600; padding: 10px 26px; border-radius: 999px; animation: pop 0.35s ease; }
+@keyframes pop { from { transform: scale(0.3); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* 座位 */
+.seat-wrap { overflow-x: auto; }
+.podium { text-align: center; background: #409eff; color: #fff; border-radius: 6px; padding: 8px 0; font-weight: 600; letter-spacing: 12px; margin: 0 auto 18px; width: 60%; min-width: 320px; }
+.seat-grid { display: grid; gap: 10px; min-width: max-content; margin: 0 auto; }
+.seat { min-height: 64px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 15px; cursor: pointer; user-select: none; transition: all 0.15s; }
+.seat:hover { transform: translateY(-2px); }
+.seat.occupied { background: #409eff; color: #fff; font-weight: 600; box-shadow: 0 2px 8px rgba(64, 158, 255, 0.35); }
+.seat.empty-seat { background: #f0f2f5; color: #c0c4cc; border: 1px dashed #dcdfe6; }
+.seat.blocked-seat { background: #909399; color: #fff; }
+.seat.selected-seat { outline: 3px solid #e6a23c; }
+.seat-legend { display: flex; gap: 18px; color: #909399; font-size: 13px; margin-top: 14px; justify-content: center; }
+
+/* 成绩分析 */
+.md-view { line-height: 1.75; font-size: 14px; color: #303133; }
+.md-view h1, .md-view h2, .md-view h3 { margin: 14px 0 8px; font-size: 15px; }
+.md-view p { margin: 8px 0; }
+.md-view ul, .md-view ol { padding-left: 22px; margin: 6px 0; }
+.md-view li { margin: 3px 0; }
+.md-view b { color: #c0392b; }
+
+/* 打印（花名册等） */
+@media print {
+  .sidebar, .topbar, .no-print { display: none !important; }
+  .main { background: #fff; }
+  .el-main { padding: 0 !important; }
+  .card { box-shadow: none; border: none; }
+}

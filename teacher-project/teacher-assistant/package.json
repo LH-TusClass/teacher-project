@@ -1,0 +1,18 @@
+{
+  "name": "teacher-assistant",
+  "version": "1.1.0",
+  "private": true,
+  "description": "教师学生管理平台（班级管理、抽奖、成绩统计、座位）— 前后端分离版，MySQL + Redis",
+  "scripts": {
+    "install:all": "npm install && npm --prefix web install",
+    "build": "npm --prefix web run build",
+    "start": "node server/index.js",
+    "migrate": "node server/migrate.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "redis": "^4.7.0"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "classes": [
+    {
+      "id": "cls_mtu37tax68c4h5",
+      "name": "三年二班",
+      "createdAt": "2026-09-09T12:41:26.553Z"
+    },
+    {
+      "id": "cls_mtvhoxbrh4p6u0",
+      "name": "三年三班",
+      "createdAt": "2026-09-10T12:14:25.719Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "stu_mtu37tkytziuco",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "张三",
+      "studentNo": "001",
+      "gender": "男"
+    },
+    {
+      "id": "stu_mtu37tkyqp55s8",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "李四",
+      "studentNo": "002",
+      "gender": "女"
+    },
+    {
+      "id": "stu_mtu37tkyyy51rs",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "王五",
+      "studentNo": "003",
+      "gender": "男"
+    },
+    {
+      "id": "stu_mtu56duc30ww8l",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "演示学生4",
+      "studentNo": "004",
+      "gender": "女"
+    },
+    {
+      "id": "stu_mtu56dwdi17adt",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "演示学生5",
+      "studentNo": "005",
+      "gender": "男"
+    },
+    {
+      "id": "stu_mtu56dy63pm0m6",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "演示学生6",
+      "studentNo": "006",
+      "gender": "女"
+    },
+    {
+      "id": "stu_mtu56e0dil5ac1",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "演示学生7",
+      "studentNo": "007",
+      "gender": "男"
+    },
+    {
+      "id": "stu_mtu56e225vioxd",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "演示学生8",
+      "studentNo": "008",
+      "gender": "女"
+    },
+    {
+      "id": "stu_mtvhpb4nacwnal",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "璇朵朵",
+      "studentNo": "111111",
+      "gender": ""
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam_mtu56e91t0mm8n",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "期中考试",
+      "date": "2026-09-01",
+      "subjects": [
+        "语文",
+        "数学",
+        "英语"
+      ],
+      "scores": {
+        "stu_mtu37tkytziuco": {
+          "语文": 65,
+          "数学": 58,
+          "英语": 70
+        },
+        "stu_mtu37tkyqp55s8": {
+          "语文": 78,
+          "数学": 75,
+          "英语": 81
+        },
+        "stu_mtu37tkyyy51rs": {
+          "语文": 91,
+          "数学": 92,
+          "英语": 92
+        },
+        "stu_mtu56duc30ww8l": {
+          "语文": 72,
+          "数学": 69,
+          "英语": 78
+        },
+        "stu_mtu56dwdi17adt": {
+          "语文": 85,
+          "数学": 86,
+          "英语": 89
+        },
+        "stu_mtu56dy63pm0m6": {
+          "语文": 66,
+          "数学": 63,
+          "英语": 75
+        },
+        "stu_mtu56e0dil5ac1": {
+          "语文": 79,
+          "数学": 80,
+          "英语": 86
+        },
+        "stu_mtu56e225vioxd": {
+          "语文": 92,
+          "数学": 97,
+          "英语": 72
+        }
+      }
+    },
+    {
+      "id": "exam_mtu56ecx4rxl9v",
+      "classId": "cls_mtu37tax68c4h5",
+      "name": "月考一",
+      "date": "2026-08-20",
+      "subjects": [
+        "语文",
+        "数学",
+        "英语"
+      ],
+      "scores": {}
+    }
+  ],
+  "lotteries": [],
+  "seats": {
+    "cls_mtu37tax68c4h5": {
+      "rows": 7,
+      "cols": 6,
+      "blocked": [],
+      "seats": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "updatedAt": "2026-09-09T13:01:59.087Z"
+    }
+  }
+}
